@@ -125,10 +125,11 @@ main{
 }
 .btn-game:disabled{
   background-color: rgb(235, 222, 222);
-  color: rgba(204, 204, 204, 0.511);
+  color:rgba(0,0,0,1.85);
 }
 .btn-game.pair{
   background-color: rgb(154, 196, 166);
+  color:rgba(0,0,0,1);
 }
 
 .btn-reset-container{
