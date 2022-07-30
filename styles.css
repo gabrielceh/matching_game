@@ -246,6 +246,14 @@ main{
   width: 100%;
   padding: .2rem 1rem;
 }
+footer{
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.footer-text{
+  text-align: center;
+  color: rgb(250,250,250);
+}
 
 
 @media screen and (min-width:700px) {
