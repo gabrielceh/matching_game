@@ -210,6 +210,18 @@ document.addEventListener('DOMContentLoaded', (e) => {
   $gamesLose.innerHTML = gamesLose;
   $gamesPlayed.innerHTML = gamesPlayed;
   $gamesWins.innerHTML = gamesWins;
+  if (sizeDefault === '16') {
+    timerUser = 30;
+    drawTimer(timerUser);
+  }
+  if (sizeDefault === '20') {
+    timerUser = 45;
+    drawTimer(timerUser);
+  }
+  if (sizeDefault === '24') {
+    timerUser = 60;
+    drawTimer(timerUser);
+  }
 });
 
 $formGame.addEventListener('submit', (e) => {
