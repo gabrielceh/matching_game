@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Estilos -->
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Matching game</title>
+  </head>
+  <body>
+    <div class="modal">
+      <div class="modal-container">
+        <span class="modal-btn-close">✖</span>
+        <div class="modal-content">
+
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-form">
+      <div class="modal-form-container">
+        <span class="modal-form-btn-close">✖</span>
+        <div class="modal-form-content">
+          <form id="form-game" class="form-game">
+            <div class="form-inputs">
+              <div>
+                <label for="num-rows">Grid size</label>
+                <select name="" id="num-rows" name="num-rows" class="form-select"></select>
+              </div>
+              <div>
+                <label for="type-rows">Type card</label>
+                <select name="" id="type-rows" name="type-rows" class="form-select"></select>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-form" role="button"><span class="btn-text">Change</span></button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+    <main>
+      <section class="game-section section-container">
+        <h2 class="game-title">Matching Game</h2>
+        <div class="timer-container">
+          <span class="timer-label">Time: </span><span class="js-timer timer ok"></span> <span> sec.</span>
+        </div>
+        <table class="game-table js-game-table">
+          <!-- <tr class="game-table-row">
+            <td><button class="btn btn-game js-btn" id="0"></button></td>
+            <td><button class="btn btn-game js-btn" id="1"></button></td>
+            <td><button class="btn btn-game js-btn" id="2"></button></td>
+            <td><button class="btn btn-game js-btn" id="3"></button></td>
+          </tr>
+          <tr class="game-table-row">
+            <td><button class="btn btn-game js-btn" id="4"></button></td>
+            <td><button class="btn btn-game js-btn" id="5"></button></td>
+            <td><button class="btn btn-game js-btn" id="6"></button></td>
+            <td><button class="btn btn-game js-btn" id="7"></button></td>
+          </tr>
+          <tr class="game-table-row">
+            <td><button class="btn btn-game js-btn" id="8"></button></td>
+            <td><button class="btn btn-game js-btn" id="9"></button></td>
+            <td><button class="btn btn-game js-btn" id="10"></button></td>
+            <td><button class="btn btn-game js-btn" id="11"></button></td>
+          </tr>
+          <tr class="game-table-row">
+            <td><button class="btn btn-game js-btn" id="12"></button></td>
+            <td><button class="btn btn-game js-btn" id="13"></button></td>
+            <td><button class="btn btn-game js-btn" id="14"></button></td>
+            <td><button class="btn btn-game js-btn" id="15"></button></td>
+          </tr>  -->
+          </table>
+        </article>
+        
+        <article class="btn-reset-container">
+          <button id="js-btn-reset" class="btn btn-reset"><span class="btn-text">Reset</span></button>
+          <button id="js-btn-change-layout" class="btn btn-change-layout"><span class="btn-text">Change Layout</span></button>
+        </article>
+      </section>
+
+      <section class="stats-section section-container">
+        <article class="stat-container">
+          <span class="stats-label">Number of moves: </span
+          ><span class="js-moves stats-data">0</span>
+        </article>
+        
+        <article class="stat-container stats-games">
+          <p>
+            <span class="stats-label">Games played: </span>
+            <span class="js-games-played stats-data">0</span>
+          </p>
+          <p>
+            <span class="stats-label">Defeats: </span>
+            <span class="js-games-lose stats-data">0</span>
+          </p>
+          <p>
+            <span class="stats-label">Wins: </span>
+            <span class="js-games-wins stats-data">0</span>
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <script src="./js/app.js" type="module"></script>
+  </body>
+</html>
